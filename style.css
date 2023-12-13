@@ -58,7 +58,7 @@ textarea {
 .header_logo-container {
   display: flex;
   align-items: center;
-  cursor: pointer;
+  cursor: default;
   color: #333;
   transition: color .3s
 }
