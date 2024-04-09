@@ -38,7 +38,7 @@ function operador(num){
     //Controlamos la división por 0
     if(numero=='0' && operadorSeleccionado=='/'){
         limpiar();
-        txtResul.innerHTML = "Indenfido!";
+        txtResul.innerHTML = "No es posible dividir por0!";
         return;
     }
 
