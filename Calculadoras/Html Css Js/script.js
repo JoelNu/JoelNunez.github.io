@@ -18,7 +18,7 @@ let ultimoDigitoPresionado = "";
 
 //Presiono una tecla de operación
 function operacion(oper){
-    //guardo la operación que eleigio
+    //guardo la operación que eligio
     operadorSeleccionado = oper;
     ultimoDigitoPresionado = "operacion";
     parcial = parcial + oper;
@@ -38,7 +38,7 @@ function operador(num){
     //Controlamos la división por 0
     if(numero=='0' && operadorSeleccionado=='/'){
         limpiar();
-        txtResul.innerHTML = "No es posible dividir por0!";
+        txtResul.innerHTML = "No es posible dividir por 0!";
         return;
     }
 
@@ -61,7 +61,9 @@ function limpiar(){
 function calculo(){
     //con eval evaluo la operacion que esta en string.
     //asi obtengo un resultado numerico
-    parcial = eval(parcial);
+    if (parcial -= ""){
+        parcial = eval(parcial);
+    }
     //muestro el resultado
     txtResul.innerHTML = parcial;
     //vuelvo a convetir parcial en string
